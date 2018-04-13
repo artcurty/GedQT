@@ -28,12 +28,13 @@ void Pilha::Push(int v){
         Cabeca=tmp;
         }
 }
-void Pilha::Pop(){
+int Pilha::Pop(){
     if(PilhaVazia()!=true)
     {
         int v = Cabeca->info;
         Node *tmp = Cabeca;
         Cabeca = Cabeca->proximo;
+        return v;
         delete tmp;
     }
 }

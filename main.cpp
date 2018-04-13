@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
+#include "node.h"
+#include "pilha.h"
 
 int main(int argc, char *argv[])
 {

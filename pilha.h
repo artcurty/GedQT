@@ -17,7 +17,7 @@ class Pilha
             }
 
             bool PilhaVazia();
-            void Pop();
+            int Pop();
             void Push(int);
             int tamPilha();
             int Top();
