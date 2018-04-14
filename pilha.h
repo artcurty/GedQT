@@ -9,11 +9,12 @@ class Pilha
 
         private:
             Node *Cabeca;
-
+            int tamanho;
         public:
             Pilha()
             {
                 Cabeca=NULL;
+                tamanho=0;
             }
 
             bool PilhaVazia();
@@ -21,6 +22,7 @@ class Pilha
             void Push(int);
             int tamPilha();
             int Top();
+            int ListaPilha();
 
 };
 

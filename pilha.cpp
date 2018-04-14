@@ -10,6 +10,10 @@ int Pilha::Top()
     }
 }
 
+int Pilha::tamPilha(){
+    return tamanho;
+}
+
 bool Pilha::PilhaVazia()
 {
 
@@ -21,12 +25,15 @@ void Pilha::Push(int v){
         Node *novo = new Node(v);
         novo->proximo=Cabeca;
         Cabeca=novo;
-        }else{
-
+        }
+      else
+      {
         Node *tmp = new Node(v);
         tmp->proximo=Cabeca;
         Cabeca=tmp;
         }
+      tamanho++;
+
 }
 int Pilha::Pop(){
     if(PilhaVazia()!=true)
@@ -34,7 +41,18 @@ int Pilha::Pop(){
         int v = Cabeca->info;
         Node *tmp = Cabeca;
         Cabeca = Cabeca->proximo;
-        return v;
         delete tmp;
+        tamanho--;
+        return v;
     }
+}
+
+int Pilha::ListaPilha()
+{
+    while(!PilhaVazia()){
+        int v =Cabeca->info;
+        return v;
+        Cabeca = Cabeca->proximo;
+    }
+
 }
