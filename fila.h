@@ -5,23 +5,23 @@
 
 class Fila{
     private:
-        Node *Inicio, *Final;
+        Node *Inicio;
+        Node  *Final;
         int tamanho;
     public:
         Fila()
         {
-            Inicio=Final=NULL;
+            Inicio=NULL;
+            Final=NULL;
             tamanho=0;
         }
 
         bool fVazia();
-        int PopFront();
-        int Back();
-        void Reverse();
-        void toFront(int);
-        void Push_back(int);
-       // int tamFila();
-
+        int Dequeue();
+        void Enqueue(int);
+        int tamFila();
+        int Peek();
+        int listaFila();
 };
 
 #endif // FILA_H

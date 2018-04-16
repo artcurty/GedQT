@@ -1,89 +1,52 @@
 #include "fila.h"
-#include <iostream>
 #include "node.h"
+#include <QtAlgorithms>
 
 bool Fila::fVazia(){
-    if(tamanho==0)
-    return true;
-    else
-    return false;
-
+    return Inicio==NULL;
 }
-/*
-int Fila::tamFila()
-{
-    int tam = 0;
-    if(Inicio!=0)
-    {
-        Node *p;
-        for(p=Inicio;p!=0;p=p->proximo){
-            tam++;
-        }
-        return (tam);
-    }
-} */
-void Fila::Push_back(int info){
+int Fila::tamFila(){
+    return tamanho;
+}
+int Fila::Peek(){
 
-    if(fVazia()){
-        Inicio = Final = new Node(info);
-    } else{
-            Final->proximo = new Node(info);
-            Final = Final->proximo;
+    if(!fVazia()){
+     return Inicio->info;
+        }
+}
+void Fila::Enqueue(int v){
+
+    if(fVazia())
+    {    Node *vtx = new Node(v);
+         vtx->proximo=Inicio;
+         Inicio=vtx;
+         Final=Inicio;
+         tamanho++;
+     } else
+        {
+            Node *novo = new Node(v);
+            Final->proximo = novo;
+            Final = novo;
             tamanho++;
-        }
+         }
 
 }
-
-
-int Fila::PopFront() //imprime o número da frente e depois apaga
+int Fila::Dequeue() //imprime o número da frente e depois apaga
 {
     if(!fVazia())
     {
-        int info=Inicio->info;
+        int valor = Inicio->info;
         Node *tmp = Inicio;
         Inicio = Inicio->proximo;
-        delete tmp;
         tamanho--;
+        delete tmp;
+        return valor;
     }
-
 }
-/*
-    int Fila::Back () //imprime o número de trás e depois apaga
-    {   if(!fVazia())
-        {
-            int info = Final->info;
-            Node *tmp = Final;
-            Final = Final->proximo;
-            delete tmp;
-            tamanho--;
-        }
-
+int Fila::listaFila(){
+    while(!fVazia()){
+        int v=Inicio->info;
+        return v;
+        Inicio = Inicio->proximo;
     }
-
-void Fila::Reverse() //reverte todos os elementos da fila
-{
-    int v = tamanho;
-    for(int i=1;i<v;i++) //utiliza o tamanho da fila enquanto contador for menor que o tamanho, então i++
-    {
-            int info = Inicio->info;
-            Node *tmp = Inicio;
-            Inicio = Inicio->proximo;
-            delete tmp;
-            Push_back(info);
-            //tira o da frente e joga pro final
-    }
-}*/
-
-void Fila::toFront(int f) // Coloca um numero na frente "Preferencial"
-    {
-        if(fVazia()){
-        Inicio = Final = new Node(f);
-        }else{
-
-        Node *tmp = new Node(f);
-        tmp->proximo=Inicio;
-        Inicio=tmp;
-        }
-        tamanho++;
-
-    }
+}

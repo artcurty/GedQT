@@ -6,6 +6,7 @@ class Node{
     public:
     int info;
     Node *proximo;
+    Node *anterior;
     Node()
     {
         proximo=NULL;

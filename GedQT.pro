@@ -15,11 +15,23 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     pilha.cpp \
-    fila.cpp
+    fila.cpp \
+    windowfila.cpp \
+    windowpilha.cpp \
+    windowlista.cpp \
+    lista.cpp
 
 HEADERS  += mainwindow.h \
     pilha.h \
     node.h \
-    fila.h
+    fila.h \
+    windowfila.h \
+    windowpilha.h \
+    windowlista.h \
+    lista.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    windowfila.ui \
+    mainwindow.ui \
+    windowpilha.ui \
+    windowlista.ui
