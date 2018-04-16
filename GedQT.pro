@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    pilha.cpp
+    pilha.cpp \
+    fila.cpp
 
 HEADERS  += mainwindow.h \
     pilha.h \
-    node.h
+    node.h \
+    fila.h
 
 FORMS    += mainwindow.ui

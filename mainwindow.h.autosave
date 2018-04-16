@@ -18,9 +18,9 @@ public:
 private slots:
     void on_OK_clicked();
 
-    void on_pushButton_clicked();
+    void on_pushButton_clicked();   
 
-    void on_columnView_activated(const QModelIndex &index);
+    void on_listWidget_activated(const QModelIndex &index);
     
 private:
     Ui::MainWindow *ui;
