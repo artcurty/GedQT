@@ -3,8 +3,10 @@
 #include "pilha.h"
 #include "node.h"
 #include <QtAlgorithms>
+#include <QMessageBox>
 
 Pilha str;
+
 windowpilha::windowpilha(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::windowpilha)
@@ -18,21 +20,34 @@ windowpilha::~windowpilha()
 }
 
 void windowpilha::on_OK_clicked()
-{
-    QString ent=ui->entrada->text();
-   int valor = ent.toInt();
-   str.Push(valor);
+{   if(ui->entrada->text()==NULL){
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Digite algum numero para ser inserido."));
+    }else{
+        QString ent=ui->entrada->text();
+        int valor = ent.toInt();
+        str.Push(valor);
 
-   int v = str.ListaPilha();
-   QString empilha = QVariant(v).toString();
-   ui->listWidget->insertItem(0,empilha);
-   int cont = str.tamPilha();
-   QString contador = QVariant(cont).toString();
-   ui->tamanhoPilha->setText(contador);
+        int v = str.ListaPilha();
+        QString empilha = QVariant(v).toString();
+        ui->listWidget->insertItem(0,empilha);
+        int cont = str.tamPilha();
+        QString contador = QVariant(cont).toString();
+        ui->tamanhoPilha->setText(contador);
+    }
 }
 
 void windowpilha::on_pushButton_clicked()
-{   if(!str.PilhaVazia()){
+{   if(str.PilhaVazia())
+    {
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Fila vazia."));
+    }
+    else{
     str.Pop();
     ui->listWidget->item(0)->setSelected(true);
     delete ui->listWidget->item(0);
@@ -54,5 +69,9 @@ void windowpilha::on_Peek_clicked()
         else
     {
         ui->resultadoTop->setText("NULL");
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Pilha vazia."));
     }
 }

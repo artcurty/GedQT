@@ -3,7 +3,8 @@
 #include "fila.h"
 #include <QtAlgorithms>
 #include "node.h"
-
+#include <QMessageBox>
+#define NULL 0
 Fila nfila;
 
 windowfila::windowfila(QWidget *parent) :
@@ -20,29 +21,43 @@ windowfila::~windowfila()
 
 
 void windowfila::on_Enqueue_clicked()
-{
+{  if(ui->valorEntrada->text()==NULL){
 
-   QString inserido=ui->valorEntrada->text();
-   int nvalor = inserido.toInt();
-   nfila.Enqueue(nvalor);
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Digite algum numero para ser inserido."));
+    }else{
 
-   ui->listfila->addItem(inserido);
+        QString inserido=ui->valorEntrada->text();
+        int nvalor = inserido.toInt();
+        nfila.Enqueue(nvalor);
 
-   int cont = nfila.tamFila();
-   QString contador = QVariant(cont).toString();
-   ui->tamanhofila->setText(contador);
+        ui->listfila->addItem(inserido);
+
+        int cont = nfila.tamFila();
+        QString contador = QVariant(cont).toString();
+        ui->tamanhofila->setText(contador);
+    }
 
 }
 
 void windowfila::on_Dequeue_clicked()
-{
-   nfila.Dequeue();
+{   if(nfila.fVazia())
+    {
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Fila vazia."));
+    }else{
+        nfila.Dequeue();
 
-   delete ui->listfila->item(0);
-   int cont1 = nfila.tamFila();
-   QString contador1 = QVariant(cont1).toString();
-   ui->tamanhofila->setText(contador1);
+        delete ui->listfila->item(0);
+        int cont1 = nfila.tamFila();
+        QString contador1 = QVariant(cont1).toString();
+        ui->tamanhofila->setText(contador1);
 
+    }
 }
 
 void windowfila::on_Peek_clicked()
@@ -52,11 +67,13 @@ void windowfila::on_Peek_clicked()
         QString frente = QVariant(vFront).toString();
         ui->pFila->setText(frente);
         ui->listfila->item(0)->setSelected(true);
-     }
-        else
-    {
+     }else{
 
         ui->pFila->setText("NULL");
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Fila vazia."));
     }
 
-    }
+}
