@@ -19,7 +19,9 @@ SOURCES += main.cpp\
     windowfila.cpp \
     windowpilha.cpp \
     windowlista.cpp \
-    lista.cpp
+    lista.cpp \
+    linkedlist.cpp \
+    windowlinkedlist.cpp
 
 HEADERS  += mainwindow.h \
     pilha.h \
@@ -28,10 +30,13 @@ HEADERS  += mainwindow.h \
     windowfila.h \
     windowpilha.h \
     windowlista.h \
-    lista.h
+    lista.h \
+    linkedlist.h \
+    windowlinkedlist.h
 
 FORMS    += \
     windowfila.ui \
     mainwindow.ui \
     windowpilha.ui \
-    windowlista.ui
+    windowlista.ui \
+    windowlinkedlist.ui

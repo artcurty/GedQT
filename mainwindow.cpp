@@ -4,6 +4,7 @@
 #include "windowfila.h"
 #include "windowpilha.h"
 #include "windowlista.h"
+#include "windowlinkedlist.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -38,4 +39,11 @@ void MainWindow::on_fila_clicked()
     windowfila wFila;
     wFila.setModal(true);
     wFila.exec();
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    windowLinkedList wlistaS;
+    wlistaS.setModal(true);
+    wlistaS.exec();
 }

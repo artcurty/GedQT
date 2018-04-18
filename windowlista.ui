@@ -182,6 +182,38 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tamanho da lista:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="retTamanho">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>40</y>
+     <width>59</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
   </widget>
   <zorder>insertAfter</zorder>
   <zorder>pushButton_2</zorder>
@@ -191,13 +223,14 @@
   <zorder>removeFront</zorder>
   <zorder>removeN</zorder>
   <zorder>entrada</zorder>
-  <zorder></zorder>
   <zorder>positionInsert</zorder>
   <zorder>positionRemove</zorder>
   <zorder>label</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>listWidget</zorder>
+  <zorder>label_2</zorder>
+  <zorder>retTamanho</zorder>
  </widget>
  <resources/>
  <connections/>

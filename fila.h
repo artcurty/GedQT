@@ -2,7 +2,7 @@
 #define FILA_H
 #include "node.h"
 #include <iostream>
-
+#define NULL 0;
 class Fila{
     private:
         Node *Inicio;

@@ -1,20 +1,18 @@
-#ifndef LISTA_H
-#define LISTA_H
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
 #include "node.h"
 
-class lista
+class linkedlist
 {private:
     Node* cabeca;
     Node* cauda;
     int tamanho;
 public:
-    lista(){
+    linkedlist(){
         cabeca = NULL;
         cauda = NULL;
         tamanho = 0;
     }
-
-
     int Search(int );
     bool vazia();
     void InsertCabeca(int );
@@ -26,4 +24,4 @@ public:
     int Tamanho();
 };
 
-#endif // LISTA_H
+#endif // LINKEDLIST_H
