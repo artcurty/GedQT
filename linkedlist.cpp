@@ -85,6 +85,14 @@ void linkedlist::RemoveTras(){
     {
         Node *pre = cabeca;
         Node *temp = cabeca->proximo;
+        if(cabeca==cauda){
+            Node *temp=cabeca;
+            cabeca = NULL;
+            cauda = NULL;
+            delete temp;
+            tamanho--;
+        }
+        else{
 
         while(temp->proximo!=NULL)
         {
@@ -96,6 +104,7 @@ void linkedlist::RemoveTras(){
             cauda = pre;
             tamanho--;
     }
+   }
 }
 
 void linkedlist::RemoveNp(int i){

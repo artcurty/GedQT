@@ -36,7 +36,7 @@ void lista::InsertCabeca(int v){
      Node* NovoNo=new Node(v);
 
        if(vazia())
-       {           cabeca=NovoNo;
+       {    cabeca=NovoNo;
            NovoNo->anterior=NULL;
            NovoNo->proximo=NULL;
            cauda=NovoNo;
