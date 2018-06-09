@@ -34,41 +34,54 @@ int lista::Search(int v)
 void lista::InsertCabeca(int v){
 
      Node* NovoNo=new Node(v);
+     int teste = Search(v);
 
-       if(vazia())
-       {    cabeca=NovoNo;
-           NovoNo->anterior=NULL;
-           NovoNo->proximo=NULL;
-           cauda=NovoNo;
-           tamanho++;
-           return;
-       }else{
-           NovoNo->proximo=cabeca;
-           NovoNo->anterior=NULL;
-           cabeca->anterior=NovoNo;
-           cabeca=NovoNo;
-           tamanho++;
-       }
-}
+    if(v!=teste)
+    {
+         if(tamanho<=10)
+         {
+               if(vazia())
+               {    cabeca=NovoNo;
+                   NovoNo->anterior=NULL;
+                   NovoNo->proximo=NULL;
+                   cauda=NovoNo;
+                   tamanho++;
+                   return;
+               }else{
+                   NovoNo->proximo=cabeca;
+                   NovoNo->anterior=NULL;
+                   cabeca->anterior=NovoNo;
+                   cabeca=NovoNo;
+                   tamanho++;
+               }
+        }
+   }
+ }
 
 void lista::InsertCalda(int v){
     Node *NovoNo = new Node(v);
-
-    if(vazia()){
-        cabeca=NovoNo;
-        NovoNo->anterior=NULL;
-        NovoNo->proximo=NULL;
-        cauda=NovoNo;
-        tamanho++;
-        return;
-    }else{
-        NovoNo->anterior=cauda;
-        cauda->proximo=NovoNo;
-        NovoNo->proximo=NULL;
-        cauda=NovoNo;
-        tamanho++;
-    }
-}
+    int teste = Search(v);
+ if(v!=teste)
+ {
+     if(tamanho <= 10)
+        {
+        if(vazia()){
+            cabeca=NovoNo;
+            NovoNo->anterior=NULL;
+            NovoNo->proximo=NULL;
+            cauda=NovoNo;
+            tamanho++;
+            return;
+         }else{
+            NovoNo->anterior=cauda;
+            cauda->proximo=NovoNo;
+            NovoNo->proximo=NULL;
+            cauda=NovoNo;
+            tamanho++;
+           }
+         }
+   }
+ }
  void lista::InsertNp(int v, int i){
 
      if(!vazia()){

@@ -1,27 +1,25 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
-#include "node.h"
+#include <iostream>
+#define tamMax 10
+using namespace std;
 
-class linkedlist
-{private:
-    Node* cabeca;
-    Node* cauda;
-    int tamanho;
+class ListaSeq{
+// Vetor que contém os dados da lista
+private:
+int dados[tamMax];
+int tamAtual;
+//int tamMax;
+
 public:
-    linkedlist(){
-        cabeca = NULL;
-        cauda = NULL;
-        tamanho = 0;
-    }
-    int Search(int );
+    ListaSeq();
+    ~ListaSeq();
     bool vazia();
-    void InsertCabeca(int );
-    void InsertCalda(int );
-    void InsertNp(int ,int );
-    void RemoveFrente();
-    void RemoveTras();
-    void RemoveNp(int );
-    int Tamanho();
+    bool cheia();
+    int getTamanho();
+    int getElemento(int pos);
+    int getPosicao(int dado);
+    bool insere(int pos, int dado);
+    int remove(int pos);
 };
-
 #endif // LINKEDLIST_H

@@ -17,6 +17,8 @@ public:
 
 private slots:
 
+
+
     void on_search_clicked();
 
     void on_InsertFront_clicked();

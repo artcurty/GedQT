@@ -21,6 +21,8 @@ SOURCES += main.cpp\
     windowlista.cpp \
     lista.cpp \
     linkedlist.cpp \
+    windowarvore.cpp \
+    arvore.cpp \
     windowlinkedlist.cpp
 
 HEADERS  += mainwindow.h \
@@ -32,11 +34,15 @@ HEADERS  += mainwindow.h \
     windowlista.h \
     lista.h \
     linkedlist.h \
-    windowlinkedlist.h
+    windowlinkedlist.h \
+    no_arvore.h \
+    windowarvore.h \
+    arvore.h
 
 FORMS    += \
     windowfila.ui \
     mainwindow.ui \
     windowpilha.ui \
     windowlista.ui \
+    windowarvore.ui \
     windowlinkedlist.ui

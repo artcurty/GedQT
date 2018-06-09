@@ -5,6 +5,7 @@
 #include "windowpilha.h"
 #include "windowlista.h"
 #include "windowlinkedlist.h"
+#include "windowarvore.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -46,4 +47,11 @@ void MainWindow::on_pushButton_clicked()
     windowLinkedList wlistaS;
     wlistaS.setModal(true);
     wlistaS.exec();
+}
+
+void MainWindow::on_fila_2_clicked()
+{
+    windowarvore warvore;
+    warvore.setModal(true);
+    warvore.exec();
 }

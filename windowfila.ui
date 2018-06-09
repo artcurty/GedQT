@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>469</width>
+    <height>306</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QPushButton" name="Peek">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>240</y>
-     <width>71</width>
-     <height>22</height>
+     <x>60</x>
+     <y>221</y>
+     <width>80</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="text">
@@ -29,20 +29,20 @@
   <widget class="QLineEdit" name="valorEntrada">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>150</y>
-     <width>71</width>
-     <height>27</height>
+     <x>60</x>
+     <y>128</y>
+     <width>80</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="Dequeue">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>210</y>
-     <width>71</width>
-     <height>26</height>
+     <x>60</x>
+     <y>190</y>
+     <width>80</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="text">
@@ -52,10 +52,10 @@
   <widget class="QPushButton" name="Enqueue">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>180</y>
-     <width>71</width>
-     <height>26</height>
+     <x>60</x>
+     <y>159</y>
+     <width>80</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="text">
@@ -65,8 +65,8 @@
   <widget class="QLabel" name="tamanhofila">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>180</y>
+     <x>320</x>
+     <y>130</y>
      <width>41</width>
      <height>16</height>
     </rect>
@@ -78,8 +78,8 @@
   <widget class="QLabel" name="pFila">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>210</y>
+     <x>320</x>
+     <y>160</y>
      <width>41</width>
      <height>16</height>
     </rect>
@@ -91,8 +91,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>180</y>
+     <x>200</x>
+     <y>130</y>
      <width>111</width>
      <height>20</height>
     </rect>
@@ -104,8 +104,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>210</y>
+     <x>200</x>
+     <y>160</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -117,9 +117,9 @@
   <widget class="QListWidget" name="listfila">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>80</y>
-     <width>321</width>
+     <x>60</x>
+     <y>60</y>
+     <width>361</width>
      <height>41</height>
     </rect>
    </property>

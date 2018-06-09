@@ -6,195 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>319</height>
+    <width>692</width>
+    <height>318</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="insertAfter">
-   <property name="geometry">
-    <rect>
-     <x>29</x>
-     <y>230</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Insert after</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>29</x>
-     <y>170</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Search</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="removeAfter">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>202</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Remove after</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="InsertFront">
-   <property name="geometry">
-    <rect>
-     <x>29</x>
-     <y>200</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Insert front</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="insertN">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>140</y>
-     <width>61</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Insert </string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="removeFront">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>230</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Remove front</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="removeN">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>170</y>
-     <width>61</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Remove</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="positionInsert">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>140</y>
-     <width>31</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="positionRemove">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>170</y>
-     <width>31</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>140</y>
-     <width>61</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Posição:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>170</y>
-     <width>59</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Posição:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="entrada">
-   <property name="geometry">
-    <rect>
-     <x>139</x>
-     <y>140</y>
-     <width>41</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>130</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Digite o número:</string>
-   </property>
-  </widget>
-  <widget class="QListWidget" name="listWidget">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>70</y>
-     <width>331</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="movement">
-    <enum>QListView::Static</enum>
-   </property>
-   <property name="flow">
-    <enum>QListView::LeftToRight</enum>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>111</width>
+     <x>220</x>
+     <y>50</y>
+     <width>121</width>
      <height>21</height>
     </rect>
    </property>
@@ -205,8 +29,8 @@
   <widget class="QLabel" name="retTamanho">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>40</y>
+     <x>340</x>
+     <y>50</y>
      <width>59</width>
      <height>21</height>
     </rect>
@@ -215,22 +39,396 @@
     <string>0</string>
    </property>
   </widget>
-  <zorder>insertAfter</zorder>
-  <zorder>pushButton_2</zorder>
-  <zorder>removeAfter</zorder>
-  <zorder>InsertFront</zorder>
-  <zorder>insertN</zorder>
-  <zorder>removeFront</zorder>
-  <zorder>removeN</zorder>
-  <zorder>entrada</zorder>
-  <zorder>positionInsert</zorder>
-  <zorder>positionRemove</zorder>
-  <zorder>label</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_4</zorder>
-  <zorder>listWidget</zorder>
+  <widget class="QListWidget" name="no4">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no5">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no6">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no7">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no8">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no9">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>100</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↔</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="no10">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>100</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="movement">
+    <enum>QListView::Static</enum>
+   </property>
+   <property name="flow">
+    <enum>QListView::LeftToRight</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>160</y>
+     <width>560</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Digite o número:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="entrada"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="insertN">
+      <property name="text">
+       <string>Insert </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Posição:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLineEdit" name="positionInsert"/>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="removeN">
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Posição:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLineEdit" name="positionRemove"/>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QPushButton" name="InsertFront">
+      <property name="text">
+       <string>Insert front</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="3">
+     <widget class="QPushButton" name="removeAfter">
+      <property name="text">
+       <string>Remove after</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="insertAfter">
+      <property name="text">
+       <string>Insert after</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2" colspan="3">
+     <widget class="QPushButton" name="removeFront">
+      <property name="text">
+       <string>Remove front</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>no3</zorder>
   <zorder>label_2</zorder>
   <zorder>retTamanho</zorder>
+  <zorder>no4</zorder>
+  <zorder>no5</zorder>
+  <zorder>no6</zorder>
+  <zorder>no7</zorder>
+  <zorder>no8</zorder>
+  <zorder>no1</zorder>
+  <zorder>label_7</zorder>
+  <zorder>no2</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>label_13</zorder>
+  <zorder>label_14</zorder>
+  <zorder>no9</zorder>
+  <zorder>label_15</zorder>
+  <zorder>no10</zorder>
  </widget>
  <resources/>
  <connections/>
