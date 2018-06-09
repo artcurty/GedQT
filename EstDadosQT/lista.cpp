@@ -86,7 +86,6 @@ void lista::InsertCalda(int v){
 
      if(!vazia()){
 
-
              Node *pre=cabeca;
 
              for(int k=0;k < i-1; k++)

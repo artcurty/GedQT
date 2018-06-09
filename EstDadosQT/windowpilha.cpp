@@ -25,6 +25,11 @@ void windowpilha::on_OK_clicked()
                     this,
                     tr("ATENÇÃO"),
                     tr("Digite algum numero para ser inserido."));
+    }else if(str.tamPilha()>10){
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Pilha cheia"));
     }else{
         QString ent=ui->entrada->text();
         int valor = ent.toInt();

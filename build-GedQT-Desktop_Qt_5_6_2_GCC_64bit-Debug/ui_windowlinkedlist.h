@@ -55,7 +55,7 @@ public:
     {
         if (windowLinkedList->objectName().isEmpty())
             windowLinkedList->setObjectName(QStringLiteral("windowLinkedList"));
-        windowLinkedList->resize(429, 300);
+        windowLinkedList->resize(428, 300);
         label_3 = new QLabel(windowLinkedList);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(50, 130, 101, 41));
@@ -103,34 +103,34 @@ public:
         label->setGeometry(QRect(300, 140, 61, 21));
         elem1 = new QListWidget(windowLinkedList);
         elem1->setObjectName(QStringLiteral("elem1"));
-        elem1->setGeometry(QRect(70, 90, 31, 21));
+        elem1->setGeometry(QRect(10, 90, 41, 21));
         elem2 = new QListWidget(windowLinkedList);
         elem2->setObjectName(QStringLiteral("elem2"));
-        elem2->setGeometry(QRect(100, 90, 31, 21));
+        elem2->setGeometry(QRect(50, 90, 41, 21));
         elem3 = new QListWidget(windowLinkedList);
         elem3->setObjectName(QStringLiteral("elem3"));
-        elem3->setGeometry(QRect(130, 90, 31, 21));
+        elem3->setGeometry(QRect(90, 90, 41, 21));
         elem4 = new QListWidget(windowLinkedList);
         elem4->setObjectName(QStringLiteral("elem4"));
-        elem4->setGeometry(QRect(160, 90, 31, 21));
+        elem4->setGeometry(QRect(130, 90, 41, 21));
         elem5 = new QListWidget(windowLinkedList);
         elem5->setObjectName(QStringLiteral("elem5"));
-        elem5->setGeometry(QRect(190, 90, 31, 21));
+        elem5->setGeometry(QRect(170, 90, 41, 21));
         elem6 = new QListWidget(windowLinkedList);
         elem6->setObjectName(QStringLiteral("elem6"));
-        elem6->setGeometry(QRect(220, 90, 31, 21));
+        elem6->setGeometry(QRect(210, 90, 41, 21));
         elem7 = new QListWidget(windowLinkedList);
         elem7->setObjectName(QStringLiteral("elem7"));
-        elem7->setGeometry(QRect(250, 90, 31, 21));
+        elem7->setGeometry(QRect(250, 90, 41, 21));
         elem8 = new QListWidget(windowLinkedList);
         elem8->setObjectName(QStringLiteral("elem8"));
-        elem8->setGeometry(QRect(280, 90, 31, 21));
+        elem8->setGeometry(QRect(290, 90, 41, 21));
         elem9 = new QListWidget(windowLinkedList);
         elem9->setObjectName(QStringLiteral("elem9"));
-        elem9->setGeometry(QRect(310, 90, 31, 21));
+        elem9->setGeometry(QRect(330, 90, 41, 21));
         elem10 = new QListWidget(windowLinkedList);
         elem10->setObjectName(QStringLiteral("elem10"));
-        elem10->setGeometry(QRect(340, 90, 31, 21));
+        elem10->setGeometry(QRect(370, 90, 41, 21));
 
         retranslateUi(windowLinkedList);
 

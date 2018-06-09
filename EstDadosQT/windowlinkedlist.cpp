@@ -18,18 +18,6 @@ windowLinkedList::~windowLinkedList()
 
 void windowLinkedList::on_search_clicked()
 {
-
-    ui->elem1->item(0)->setSelected(false);
-    ui->elem2->item(0)->setSelected(false);
-    ui->elem3->item(0)->setSelected(false);
-    ui->elem4->item(0)->setSelected(false);
-    ui->elem5->item(0)->setSelected(false);
-    ui->elem6->item(0)->setSelected(false);
-    ui->elem7->item(0)->setSelected(false);
-    ui->elem8->item(0)->setSelected(false);
-    ui->elem9->item(0)->setSelected(false);
-    ui->elem10->item(0)->setSelected(false);
-
     if(!nLS.vazia()){
         QString text = ui->entrada->text();
           int vPesq = text.toInt();

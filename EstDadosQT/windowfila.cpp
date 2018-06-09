@@ -27,6 +27,11 @@ void windowfila::on_Enqueue_clicked()
                     this,
                     tr("ATENÇÃO"),
                     tr("Digite algum numero para ser inserido."));
+    }else if(nfila.tamFila()>10){
+        QMessageBox::warning(
+                    this,
+                    tr("ATENÇÃO"),
+                    tr("Fila cheia"));
     }else{
 
         QString inserido=ui->valorEntrada->text();
