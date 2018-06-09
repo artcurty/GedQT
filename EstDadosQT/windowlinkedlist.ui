@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Lista Estática Sequencial</string>
   </property>
   <widget class="QLabel" name="label_3">
    <property name="geometry">

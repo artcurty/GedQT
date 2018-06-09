@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Fila</string>
   </property>
   <widget class="QPushButton" name="Peek">
    <property name="geometry">

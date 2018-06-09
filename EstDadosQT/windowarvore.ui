@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Arvore Binaria</string>
   </property>
   <widget class="QListWidget" name="DRaiz">
    <property name="geometry">
