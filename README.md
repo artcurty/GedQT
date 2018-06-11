@@ -7,7 +7,8 @@ C/C++
 Software utilizado:
 [Qt Creator](https://www.qt.io/)
 
-####Imagens do programa
+###Imagens do programa
+
 ![pilha](https://user-images.githubusercontent.com/26467331/41208012-a9ad8762-6cf4-11e8-8e61-5d8fc1db2186.png)
 ![arvore](https://user-images.githubusercontent.com/26467331/41208013-a9d7e552-6cf4-11e8-8c32-778207b6c9cf.png)
 ![fila](https://user-images.githubusercontent.com/26467331/41208014-a9f04c1e-6cf4-11e8-9e5f-fd999517b7f4.png)
