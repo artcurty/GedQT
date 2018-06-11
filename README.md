@@ -11,7 +11,7 @@ Software utilizado:
 
 ![menu](https://user-images.githubusercontent.com/26467331/41208016-aa248e34-6cf4-11e8-982e-68221ff5aa23.png)
  
- Janela de **menu** para que o usuario escolha qual estrutura de dado deseja usar.
+ Janela de **menu** para que o usuário escolha qual estrutura de dado deseja usar.
   
 ![lseq](https://user-images.githubusercontent.com/26467331/41208015-aa0ba1ee-6cf4-11e8-808e-0671d79af428.png)
 
