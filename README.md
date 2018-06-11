@@ -3,7 +3,7 @@
 
 O objetivo do projeto era implementar as estruturas de dados de forma gráfica.
 
-* Linguagem utilizada:
+* Linguagens utilizadas:
   * C/C++
 * Software utilizado:
   * [Qt Creator](https://www.qt.io/)
