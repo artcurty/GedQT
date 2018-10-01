@@ -1,4 +1,6 @@
 # GedQT
+<p align="center">
+
 ##### Repositório destinado ao projeto da disciplina de *Estrutura de Dados*, ministrada pelo professor [Tiago Maritan](https://sites.google.com/a/lavid.ufpb.br/maritan/)
 
 O objetivo do projeto era implementar as estruturas de dados de forma gráfica.
@@ -59,3 +61,4 @@ O objetivo do projeto era implementar as estruturas de dados de forma gráfica.
   * Peek (Retorna o elemento que se encontra na frente da pilha).
 
 
+</p>
