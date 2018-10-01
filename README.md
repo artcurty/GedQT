@@ -4,7 +4,7 @@
 ##### Repositório destinado ao projeto da disciplina de *Estrutura de Dados*, ministrada pelo professor [Tiago Maritan](https://sites.google.com/a/lavid.ufpb.br/maritan/)
 
 
-O objetivo do projeto era implementar as estruturas de dados de forma gráfica.
+Objetivo do projeto: Implementar as estruturas de dados de forma gráfica.
 
     Linguagens utilizadas:
       C/C++
